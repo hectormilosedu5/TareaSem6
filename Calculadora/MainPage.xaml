@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"> </ColumnDefinition>
+            <ColumnDefinition Width="*"> </ColumnDefinition>
+            <ColumnDefinition Width="*"> </ColumnDefinition>
+            <ColumnDefinition Width="*"> </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/CEUTEC_HONDURAS.png/1200px-CEUTEC_HONDURAS.png"
+               Grid.Column="0"
+               Grid.Row="0"
+               Grid.ColumnSpan="4"
+               ></Image>
+
+        <Label x:Name="Resultados" Text="0" FontSize="80" VerticalTextAlignment="Center" BackgroundColor="Black" TextColor="White"
+               Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="4"
+               ></Label>
+
+
+       <Button Text="AC" Clicked="ClicAc" BackgroundColor="#bd6c09" TextColor="White"
+               Grid.Row="2"
+               Grid.Column="0"
+               ></Button>
+
+        <Button Text="MAX" Clicked="ClicBotonMax" BackgroundColor="#bd6c09" TextColor="White"
+               Grid.Row="2"
+               Grid.Column="1"
+               ></Button>
+
+        <Button Text="MIN" Clicked="ClicBotonMIn" BackgroundColor="#bd6c09" TextColor="White"
+               Grid.Row="2"
+               Grid.Column="2"
+               ></Button>
+
+        <Button Text="/"  Clicked="ClicBotonDiv" BackgroundColor="#bd6c09" TextColor="White"
+               Grid.Row="2"
+               Grid.Column="3"
+               ></Button>
+
+
+
+        <Button Text="7" Clicked="ClicBoton7" BackgroundColor="#8f8579" TextColor="White"
+               Grid.Row="3"
+               Grid.Column="0"
+               ></Button>
+
+        <Button Text="8" Clicked="ClicBoton8" BackgroundColor="#8f8579" TextColor="White"
+               Grid.Row="3"
+               Grid.Column="1"
+               ></Button>
+
+        <Button Text="9" Clicked="ClicBoton9" BackgroundColor="#8f8579" TextColor="White"
+               Grid.Row="3"
+               Grid.Column="2"
+               ></Button>
+
+        <Button Text="x" Clicked="ClicBotonMult" BackgroundColor="#bd6c09" TextColor="White"
+               Grid.Row="3"
+               Grid.Column="3"
+               ></Button>
+
+
+        <Button Text="4" Clicked="ClicBoton4" BackgroundColor="#8f8579" TextColor="White"
+               Grid.Row="4"
+               Grid.Column="0"
+               ></Button>
+
+        <Button Text="5" Clicked="ClicBoton5" BackgroundColor="#8f8579" TextColor="White"
+               Grid.Row="4"
+               Grid.Column="1"
+               ></Button>
+
+        <Button Text="6" Clicked="ClicBoton6" BackgroundColor="#8f8579" TextColor="White"
+               Grid.Row="4"
+               Grid.Column="2"
+               ></Button>
+
+        <Button Text="+" Clicked="ClicBotonMas" BackgroundColor="#bd6c09" TextColor="White"
+               Grid.Row="4"
+               Grid.Column="3"
+               ></Button>
+
+
+        <Button Text="1" Clicked="ClicBoton1" BackgroundColor="#8f8579" TextColor="White"
+               Grid.Row="5"
+               Grid.Column="0"
+               ></Button>
+
+        <Button Text="2" Clicked="ClicBoton2" BackgroundColor="#8f8579" TextColor="White"
+               Grid.Row="5"
+               Grid.Column="1"
+               ></Button>
+
+        <Button Text="3" Clicked="ClicBoton3" BackgroundColor="#8f8579" TextColor="White"
+               Grid.Row="5"
+               Grid.Column="2"
+               ></Button>
+
+        <Button Text="-" Clicked="ClicBotonMenos" BackgroundColor="#bd6c09" TextColor="White"
+               Grid.Row="5"
+               Grid.Column="3"
+               ></Button>
+
+
+        <Button Text="0" Clicked="ClicBoton0" BackgroundColor="#8f8579" TextColor="White"
+               Grid.Row="6"
+               Grid.Column="0"
+               Grid.ColumnSpan="2" 
+               ></Button>
+
+
+        <Button Text="." Clicked="ClicBotonPunto" BackgroundColor="#8f8579" TextColor="White"
+               Grid.Row="6"
+               Grid.Column="2"
+               ></Button>
+
+        <Button Text="="  Clicked="ClicBotonIgual" BackgroundColor="#bd6c09" TextColor="White"
+               Grid.Row="6"
+               Grid.Column="3"
+               ></Button>
+
+    </Grid>
+
+</ContentPage>
